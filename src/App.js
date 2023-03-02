@@ -5,7 +5,7 @@ const App = () => {
   return (
     <React.Fragment>
     
-   </React.Fragment>   tsc -v 
+   </React.Fragment>  
   );
 };
 

@@ -10,12 +10,16 @@ export class Provider extends Component {
     }
     componentDidMount(){
         axios.get(`https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=10&country=US&f_has_lyrics=1&apikey=${process.env.REACT_APP_MM_KEY}`)
-        .then(res => console.log(res.data))
+        .then(res =>    
+            {
+                this.setState({track_list: res.data.message.body.track_list})
+
+            })
         .catch(err => console.log(err));
     }
     render() {
         return (
-            <Context.Provider value = {this.state}>
+            <Context.Provider value={this.state}>
                  {this.props.children}
               </Context.Provider>
     );
@@ -24,3 +28,4 @@ export class Provider extends Component {
 
 
 export const Consumer = Context.Consumer;
+// https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=10&country=US&f_has_lyrics=1&apikey=901e2b486af70472c5feefd86769a9d6

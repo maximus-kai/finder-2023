@@ -8,6 +8,5 @@ const Index = () => {
     </React.Fragment>
   )
 }
-console.log('hello');
 
 export default Index;

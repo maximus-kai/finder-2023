@@ -12,7 +12,7 @@ class App extends Component{
       <Provider>
       <Router>
       <React.Fragment>
-        Working fine, as of march 4, 2023.
+        Working fine, as of march 5, 2023.
       <Navbar/>
         <div className='container'>
           <Routes>

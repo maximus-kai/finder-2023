@@ -1,11 +1,13 @@
 import React from 'react';
-import Tracks from '../tracks/Tracks';
+// import { MuiTypography } from '../MUI/MuiTypography';
+// import Tracks from '../tracks/Tracks';
 
 const Index = () => {
   return (
-    <React.Fragment>
-        <Tracks/>
-    </React.Fragment>
+    <>
+        {/* <Tracks/> */}
+        {/* <MuiTypography/> */}
+    </>
   )
 }
 

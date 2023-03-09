@@ -1,12 +1,13 @@
 import React from 'react';
-// import { MuiTypography } from '../MUI/MuiTypography';
-// import Tracks from '../tracks/Tracks';
+import Tracks from '../tracks/Tracks';
+import {Grid} from '@mui/material';
 
 const Index = () => {
   return (
     <>
-        {/* <Tracks/> */}
-        {/* <MuiTypography/> */}
+    <Grid container>
+        <Tracks/>
+    </Grid>
     </>
   )
 }

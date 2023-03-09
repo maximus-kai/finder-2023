@@ -17,14 +17,28 @@ class Tracks extends Component {
                     }
                         return(
                             <React.Fragment>
-                            <h3 className='mb-4 text-center' > {heading} </h3>
-                               <div>
+                            <h3  > {heading} </h3>
+                            <div>
+
+                               <div
+                               className='grid'
+                               sx={{
+                                display:'grid',
+                                gridTemplateColumns: "repeat(auto-fit,minmax(300px, 1fr))",
+                                gridGap:'1rem',
+                                justifyItems:'center',
+                                alignItems:'center',
+                                margin:'1rem',
+                                padding: '1rem'
+                               }}
+                               >
                                 {track_list.map(item=> 
                                 {
                                    return <Track key={item.track.track_id} track={item.track}/>
                                 }
                                 )}
                                </div> 
+                            </div>
 
                             </React.Fragment>
                         )

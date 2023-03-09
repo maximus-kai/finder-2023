@@ -1,11 +1,14 @@
 import React from 'react';
 import Tracks from '../tracks/Tracks';
+import {Grid} from '@mui/material';
 
 const Index = () => {
   return (
-    <React.Fragment>
+    <>
+    <Grid container>
         <Tracks/>
-    </React.Fragment>
+    </Grid>
+    </>
   )
 }
 

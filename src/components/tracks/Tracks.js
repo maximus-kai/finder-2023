@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+// import Card from '@mui/material/Card';
+// import CardActions from '@mui/material/CardActions';
 import { Consumer } from '../../Context';
-import Spinner from '../layout/Spinner';
-import Track from './Track';
+// import Track from './Track';
+// import Button from '@mui/material/Button';
+// import Typography from '@mui/material/Typography';
+import Spinner from '../layout/Spinner'
 
 
 class Tracks extends Component {
     render(){
-        
+        // const {track} = props;
         return (
             <Consumer>
                 { value =>{
@@ -19,8 +23,7 @@ class Tracks extends Component {
                         return(
 
                             <div>
-                            <h3  > {heading} </h3>
-                           <Track/>
+                           {heading}
                             </div>
                             
                         )

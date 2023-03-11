@@ -13,7 +13,7 @@ class App extends Component{
       <Router>
       <React.Fragment>
         Working fine, as of march 11, 2023.
-      <Navbar/>
+            <Navbar/>
         <div >
           <Routes>
             <Route  path='/' element = {<Index/>} />

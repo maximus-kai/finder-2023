@@ -6,6 +6,7 @@ import Track from './Track';
 
 class Tracks extends Component {
     render(){
+        
         return (
             <Consumer>
                 { value =>{
@@ -16,31 +17,12 @@ class Tracks extends Component {
                         return <Spinner/>
                     }
                         return(
-                            <React.Fragment>
-                            <h3  > {heading} </h3>
+
                             <div>
-
-                               <div
-                               className='grid'
-                               sx={{
-                                display:'grid',
-                                gridTemplateColumns: "repeat(auto-fit,minmax(300px, 1fr))",
-                                gridGap:'1rem',
-                                justifyItems:'center',
-                                alignItems:'center',
-                                margin:'1rem',
-                                padding: '1rem'
-                               }}
-                               >
-                                {track_list.map(item=> 
-                                {
-                                   return <Track key={item.track.track_id} track={item.track}/>
-                                }
-                                )}
-                               </div> 
+                            <h3  > {heading} </h3>
+                           <Track/>
                             </div>
-
-                            </React.Fragment>
+                            
                         )
                        
                 }
@@ -54,3 +36,11 @@ class Tracks extends Component {
 }
 
 export default Tracks;
+
+
+
+//   {track_list.map(item=> 
+//     {
+//        return <Track key={item.track.track_id} track={item.track}/>
+//     }
+//     )}

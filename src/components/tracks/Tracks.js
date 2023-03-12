@@ -1,30 +1,59 @@
 import React, { Component } from 'react';
-// import Card from '@mui/material/Card';
-// import CardActions from '@mui/material/CardActions';
 import { Consumer } from '../../Context';
-// import Track from './Track';
-// import Button from '@mui/material/Button';
-// import Typography from '@mui/material/Typography';
+import Track from './Track';
+import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import Spinner from '../layout/Spinner'
+
 
 
 class Tracks extends Component {
     render(){
-        // const {track} = props;
         return (
             <Consumer>
                 { value =>{
-
                     const {track_list,heading} = value;
                     if(track_list === undefined || track_list.length === 0){
 
-                        return <Spinner/>
+                        return(
+                                            <Stack
+                            sx={{ pt: 4 }}
+                            direction="row"
+                            spacing={2}
+                            justifyContent="center"
+                            >
+                        <Spinner/>
+                        </Stack>
+                        )
+                            
                     }
                         return(
+                            <>
+                            <Stack
+                            sx={{ pt: 4 }}
+                            direction="row"
+                            spacing={2}
+                            justifyContent="center"
+                            >
+                            <Typography
+                            component="h5"
+                            variant="h5"
+                            align="center"
+                            color="text.primary"
+                            gutterBottom
+                            >
+                            {heading}
+                            </Typography>
+                            
+                            </Stack>
 
-                            <div>
-                           {heading}
-                            </div>
+                            <Grid container spacing={4}>
+            {track_list.map((card) => (
+             <Track key={card.track.track_id} track={card.track}/>
+            ))}
+          </Grid>
+                            </>
                             
                         )
                        
@@ -40,10 +69,3 @@ class Tracks extends Component {
 
 export default Tracks;
 
-
-
-//   {track_list.map(item=> 
-//     {
-//        return <Track key={item.track.track_id} track={item.track}/>
-//     }
-//     )}

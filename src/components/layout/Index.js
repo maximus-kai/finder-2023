@@ -31,8 +31,25 @@ function Copyright() {
 
 
 
-const theme = createTheme();
-// const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const theme = createTheme(
+  {
+    palette: {
+      primary: {
+        light: '#212121',
+        main: '#212121',
+        dark: '#212121',
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#212121',
+        main: '#212121',
+        dark: '#212121',
+        contrastText: '#000',
+      },
+    }
+  }
+);
+
 
 
 const Index = () => {

@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
+import { Link } from 'react-router-dom';
 
 
 
@@ -37,7 +38,9 @@ const Track = (props) =>{
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View Lyrics</Button>
+                    <Link  underline='none' to={`lyrics\track\${track.track_id}`} style={{ textDecoration: 'none' }}>
+                    <Button size="small" variant="contained">View Lyrics</Button>
+                    </Link>
                   </CardActions>
                 </Card>
               </Grid>

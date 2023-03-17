@@ -11,9 +11,31 @@ import LyricsOutlinedIcon from '@mui/icons-material/LyricsOutlined';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+
+
+const theme = createTheme(
+  {
+    palette: {
+      primary: {
+        light: '#212121',
+        main: '#212121',
+        dark: '#212121',
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#212121',
+        main: '#212121',
+        dark: '#212121',
+        contrastText: '#000',
+      },
+    }
+  }
+);
 
 const Navbar =()=>{
   const pages = ['Products', 'Pricing', 'Blog'];
@@ -39,6 +61,8 @@ const Navbar =()=>{
 
 
   return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
     <AppBar position="static">
     <Container maxWidth="xl">
       <Toolbar disableGutters>
@@ -160,6 +184,7 @@ const Navbar =()=>{
       </Toolbar>
     </Container>
   </AppBar>
+  </ThemeProvider>
     );
   }
 

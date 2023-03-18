@@ -4,7 +4,10 @@ import Track from './Track';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Spinner from '../layout/Spinner'
+import LinearProgress from '@mui/material/LinearProgress';
+import Box from '@mui/material/Box';
+
+
 
 
 
@@ -17,14 +20,9 @@ class Tracks extends Component {
                     if(track_list === undefined || track_list.length === 0){
 
                         return(
-                                            <Stack
-                            sx={{ pt: 4 }}
-                            direction="row"
-                            spacing={2}
-                            justifyContent="center"
-                            >
-                        <Spinner/>
-                        </Stack>
+                            <Box sx={{ width: '100%' }}>
+                                   <LinearProgress />
+                            </Box>
                         )
                             
                     }

@@ -8,13 +8,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-// import Card from '@mui/material/Card';
-// import CardActions from '@mui/material/CardActions';
-// import CardContent from '@mui/material/CardContent';
-// import CardMedia from '@mui/material/CardMedia';
 import TextField from '@mui/material/TextField';
 import Tracks from '../tracks/Tracks';
-// import { Consumer } from '../../Context';
+import LyricsIcon from '@mui/icons-material/Lyrics';
+
 
 function Copyright() {
   return (
@@ -88,7 +85,9 @@ const Index = () => {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Search Now</Button>
+              <Button variant="contained">Search Now
+              <LyricsIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 ,ml:1}} />
+              </Button>
               <Button variant="outlined">Clear Search</Button>
             </Stack>
 {/* theres a stack here */}

@@ -26,7 +26,7 @@ export class Provider extends Component {
         axios.request(this.options)
         .then(res =>    
             {
-                console.log(res)
+                // console.log(res)
                 this.setState({track_list: res.data.message.body.track_list})
 
             })

@@ -155,7 +155,7 @@ const Navbar =()=>{
         <Box sx={{ flexGrow: 0 }}>
           <Tooltip title="Open settings">
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Avatar alt="Remy Sharp" src="https://thumbs.dreamstime.com/b/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-179285629.jpg" />
+              <Avatar alt="Remy Sharp" src="https://img.freepik.com/free-vector/botanical-letter-m_53876-96550.jpg" />
             </IconButton>
           </Tooltip>
           <Menu

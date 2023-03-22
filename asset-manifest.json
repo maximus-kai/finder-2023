@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/finder-2023/static/css/main.31d6cfe0.css",
-    "main.js": "/finder-2023/static/js/main.80105966.js",
+    "main.js": "/finder-2023/static/js/main.c66f4ab3.js",
     "static/js/787.e4a1df32.chunk.js": "/finder-2023/static/js/787.e4a1df32.chunk.js",
     "index.html": "/finder-2023/index.html",
-    "main.80105966.js.map": "/finder-2023/static/js/main.80105966.js.map",
+    "main.c66f4ab3.js.map": "/finder-2023/static/js/main.c66f4ab3.js.map",
     "787.e4a1df32.chunk.js.map": "/finder-2023/static/js/787.e4a1df32.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.80105966.js"
+    "static/js/main.c66f4ab3.js"
   ]
 }
